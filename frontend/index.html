@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Design Patterns Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Farm Friend E-Commerce Demo</h1>
+        <p>Demonstrating Behavioral Design Patterns</p>
+    </header>
+
+    <main>
+        <section class="pattern-section observer">
+            <h2>1. Observer Pattern: Price Drop Notification</h2>
+            <div class="card">
+                <h3>Product: iPhone 15</h3>
+                <p id="product-price">Current Price: $999.00</p>
+                <button id="subscribe-btn">Subscribe for Price Drop Notifications</button>
+            </div>
+            <div id="observer-output" class="output"></div>
+        </section>
+
+        <hr>
+
+        <section class="pattern-section strategy">
+            <h2>2. Strategy Pattern: Flexible Payment</h2>
+            <div class="card">
+                <h3>Checkout</h3>
+                <p>Total Amount: $150.00</p>
+                <select id="payment-method">
+                    <option value="card">Credit/Debit Card</option>
+                    <option value="upi">UPI</option>
+                    <option value="wallet">Wallet</option>
+                </select>
+                <button id="pay-btn">Pay Now</button>
+            </div>
+            <div id="strategy-output" class="output"></div>
+        </section>
+
+        <hr>
+
+        <section class="pattern-section command">
+            <h2>3. Command Pattern: Cart Actions</h2>
+            <div class="card">
+                <h3>Shopping Cart</h3>
+                <input type="text" id="item-name" placeholder="Enter item name">
+                <button id="add-item-btn">Add Item</button>
+                <button id="remove-item-btn">Remove Item</button>
+                <br><br>
+                <input type="text" id="coupon-code" placeholder="Enter coupon code">
+                <button id="apply-coupon-btn">Apply Coupon</button>
+                <br><br>
+                <button id="undo-btn">Undo Last Action</button>
+            </div>
+            <ul id="cart-list"></ul>
+            <div id="command-output" class="output"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
